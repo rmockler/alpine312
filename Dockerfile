@@ -7,6 +7,7 @@ WORKDIR /var/www/html
 ENTRYPOINT ["/sbin/tini", "-g", "--"]
 
 COPY rootfs/ /
+COPY / /git # test to try include snapshot of the build in the container
 
 CMD [ "httpd", "-f", "-h", "/var/www/html", "-p", "80", "-c", "/etc/httpd.conf" ]
 

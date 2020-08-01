@@ -11,4 +11,6 @@ find ./ -name .git -printf "cd %h;pwd;git add *;\n"|sh
 find ./ -name .git -printf "cd %h;pwd;git commit -m 'more updates via ssh';\n"|sh
 find ./ -name .git -printf "cd %h;pwd;git status;\n"|sh
 find ./ -name .git -printf "cd %h;pwd;git push sshorigin;\n"|sh
-find ./ -name .git -printf "cd %h;pwd;git push git;\n"|sh
+find ./ -name .git -printf "cd %h;pwd;git push gith;\n"|sh
+find ./ -name .git -printf "cd %h;pwd;git push ;\n"|sh
+echo "USERACC=$USERACC"
